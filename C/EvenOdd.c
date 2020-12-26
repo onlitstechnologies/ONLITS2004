@@ -1,28 +1,36 @@
-/*
-	Write a program to accept a number and find whether 
-	it is even or odd.
-*/
-
 #include<stdio.h>
-#include<stdlib.h>
 
 int main()
 {
-	int a;
+	int n;
 	
-	//clrscr();	//Not a part of standard library
+	printf("Please enter a number: ");
+	scanf("%d", &n);
 	
-	system("clear");	//Standard
-	
-	printf("Enter a number: ");
-	scanf("%d", &a);
-	
-	if(a % 2 == 0)
-		printf("This number is even.\n");
+	if(n%2==0)
+	{
+		printf("%d is an even number\n", n);
+	}
 	else
-		printf("This number is odd.\n");
-		
-	//getch();
+	{
+		printf("%d is an odd number\n", n);
+	}
 	
 	return 0;
 }
+
+
+/*
+	Walk
+	Chalna
+	
+	Agar - if
+	
+	Nahi to - else or otherwise
+	
+	C ---> C++ ---> Java
+	
+	Object - Samosa		and Class - Recipe
+	
+	
+*/
