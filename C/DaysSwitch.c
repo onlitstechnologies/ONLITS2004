@@ -33,6 +33,8 @@ int main()
 		default:
 			printf("Invalid input!\n");
 	}
+	
+	return 0;
 }
 
 /*
