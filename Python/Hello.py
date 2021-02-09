@@ -1,0 +1,2 @@
+print("Hello!")
+prin("Hi!")
