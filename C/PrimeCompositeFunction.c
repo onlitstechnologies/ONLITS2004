@@ -1,21 +1,14 @@
 #include<stdio.h>
+#include "utility.h"
 
 int main()
 {
-	int n, i, f=0;
+	int n, i;
 	
 	printf("Please enter a number: ");
 	scanf("%d", &n);
 	
-	for(i=1; i<=n; i++)
-	{
-		if(n%i==0)
-		{
-			f++;
-		}
-	}
-	
-	if(f==2)
+	if(factors(n)==2)	//Called a user-defined function
 	{
 		printf("%d is a prime number.\n", n);
 	}
