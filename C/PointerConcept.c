@@ -18,7 +18,12 @@ int main()
 }
 
 /*
+	*p
 	scanf("%d", &a)
 	
 	&	-	addressof operator
+	
+	We create a variable during runtime
+	
+	variable - address
 */
