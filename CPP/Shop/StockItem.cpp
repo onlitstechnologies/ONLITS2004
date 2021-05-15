@@ -9,10 +9,38 @@ class stock_item
     float std_cost;
     float std_price;
 public:
+    void menu();
     void new_item();
     void display_item();  
 };
 
+void stock_item :: menu()
+{
+    int ch;
+    cout<<endl;
+    cout<<"----------------- STOCK ITEM MENU ----------------"<<endl;
+    cout<<"1. New stock item"<<endl;
+    cout<<"2. Display stock item"<<endl;
+    cout<<"3. Back"<<endl;
+    cout<<"Enter choice: ";
+    cin>>ch;
+    switch(ch)
+    {
+        case 1:
+            new_item();
+            menu();
+            break;
+        case 2:
+            display_item();
+            menu();
+            break;
+        case 3:
+            break;
+        default:
+            cout<<"Invalid option!"<<endl;
+            menu();
+    }
+}
 void stock_item :: new_item()
 {
     cout<<"Enter Name: ";
@@ -29,17 +57,10 @@ void stock_item :: new_item()
 
 void stock_item :: display_item()
 {
+    cout<<"-------- DATA DISPLAY ----------"<<endl;
     cout<<"Enter Name: "<<name<<endl;
     cout<<"Enter Unit: "<<unit<<endl;
     cout<<"Enter Category: "<<category<<endl;
     cout<<"Enter Standard Cost: "<<std_cost<<endl;
     cout<<"Enter Standard Price: "<<std_price<<endl;
-}
-
-int main(int argc, char const *argv[])
-{
-    stock_item s;
-    s.new_item();
-    s.display_item();   
-    return 0;
 }
