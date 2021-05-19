@@ -13,7 +13,7 @@ public:
     void display_customer();  
 };
 
-void customer :: menu()
+void customer :: menu() //due to inline function
 {
     int ch;
     cout<<endl;
@@ -55,8 +55,8 @@ void customer :: new_customer()
 void customer :: display_customer()
 {
     cout<<"-------- DATA DISPLAY ----------"<<endl;
-    cout<<"Enter Name: "<<name<<endl;
-    cout<<"Enter Contact No: "<<contact_no<<endl;
-    cout<<"Enter Address: "<<address<<endl;
-    cout<<"Enter Email: "<<email<<endl;
+    cout<<"Name: "<<name<<endl;
+    cout<<"Contact No: "<<contact_no<<endl;
+    cout<<"Address: "<<address<<endl;
+    cout<<"Email: "<<email<<endl;
 }
