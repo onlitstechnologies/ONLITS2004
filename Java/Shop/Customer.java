@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class customer {
+public class Customer {
     String name;
     String contact_no;
     String address;
@@ -39,7 +39,7 @@ class customer {
         System.out.print("Enter Name: ");
         name = scan.nextLine();
         System.out.print("Enter Contact No: ");
-        contact_no = scan.next();
+        contact_no = scan.nextLine();
         System.out.print("Enter Address");
         address = scan.nextLine();
         System.out.print("Enter Email: ");

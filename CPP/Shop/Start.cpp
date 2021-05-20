@@ -6,8 +6,8 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     int ch;
-    stock_item s;
-    customer c;
+    stock_item *s = new stock_item();  //pointer to object
+    customer *c = new customer();    //pointer to object
     do
     {
         cout<<endl;
@@ -20,10 +20,10 @@ int main(int argc, char const *argv[])
         switch (ch)
         {
         case 1:
-            s.menu();
+            s->menu();
             break;
         case 2:
-            c.menu();
+            c->menu();
             break;
         case 3:
             exit(0);
