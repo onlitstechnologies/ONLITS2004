@@ -8,7 +8,7 @@ struct census
     float literacy_level;
 };
 
-struct census cities[5];
+struct census cities[SIZE];
 
 void read();
 void sort_alphabetically();
@@ -36,7 +36,7 @@ int main()
 void read()
 {
     int i;
-    printf("Enter the details of 5 cities below:\n");
+    printf("Enter the details of %d cities below:\n", SIZE);
     for(i=0; i<SIZE; i++)
     {
         printf("%d.\n", i+1);
